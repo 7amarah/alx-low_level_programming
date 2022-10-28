@@ -1,5 +1,5 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  *print_alphabet - print lowercase alphabet
@@ -75,11 +75,14 @@ int add(int, int);
  */
 void print_to_98(int n);
 
-
 /**
- * print_times_table - print multiplication table up to n
- * @n: integer argument
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and error is set appropriately.
  */
-void times_table(int n);
+int _putchar(char c);
+
 
 #endif
