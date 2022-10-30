@@ -10,21 +10,13 @@
 
 int _isalpha(int c)
 {
-	int alphabet;
-
-	for ((alphabet = 'a') || (alphabet = 'A'); (alphabet <= 'z') ||
-	(alphabet <= 'Z'); alphabet++)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		if (c == alphabet)
-		{
-			return (1);
-		} else if (c != alphabet)
-		{
-			return (0);
-		}
+		return (1);
 	}
-
+	else
+	{
+		return (0);
+	}
 	_putchar('\n');
-
-	return (0);
 }
