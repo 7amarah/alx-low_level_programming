@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+/**
+ * main - prints all possible different combinations of three digits,
+ * using only the putchar function.
+ *
+ * Numbers must be separated by , followed by a space.
+ *
+ * Return: 0 (Executon successful)
+ */
+
+int main(void)
+{
+	int octal1, octal2, octal3;
+
+	for (octal1 = '0'; octal1 < '8'; octal1++)
+	{
+		for (octal2 = '0'; octal2 < '8'; octal2++)
+		{
+			for (octal3 = '0'; octal3 <= '8'; octal3++)
+			{
+				if ((octal1 != octal2) && (octal2 != octal3)
+				&& (octal3 != octal1))
+				{
+					putchar(octal1);
+					putchar(octal2);
+					putchar(octal3);
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
+}
