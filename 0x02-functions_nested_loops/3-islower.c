@@ -17,9 +17,6 @@ int _islower(int c)
 		if (c == lowercase)
 		{
 			return (1);
-		} else if (c != lowercase)
-		{
-			return (0);
 		}
 	}
 
