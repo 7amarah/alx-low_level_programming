@@ -13,11 +13,11 @@ int main(void)
 {
 	int octal1, octal2, octal3;
 
-	for (octal1 = '0'; octal1 <= '7'; octal1++)
+	for (octal1 = '0'; octal1 <= '9'; octal1++)
 	{
-		for (octal2 = '0'; octal2 <= '9'; octal2++)
+		for (octal2 = (octal1 + 1); octal2 <= '9'; octal2++)
 		{
-			for (octal3 = '0'; octal3 <= '9'; octal3++)
+			for (octal3 = (octal2 + 1); octal3 <= '9'; octal3++)
 			{
 				putchar(octal1);
 				putchar(octal2);
