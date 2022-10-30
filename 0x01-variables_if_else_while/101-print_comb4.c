@@ -19,12 +19,13 @@ int main(void)
 		{
 			for (octal3 = '0'; octal3 <= '9'; octal3++)
 			{
-				if ((octal1 != octal2) && (octal2 != octal3)
-				&& (octal3 != octal1))
+				putchar(octal1);
+				putchar(octal2);
+				putchar(octal3);
+
+				if ((octal1 != '7') || (octal2 != '8')
+				|| (octal3 != '9'))
 				{
-					putchar(octal1);
-					putchar(octal2);
-					putchar(octal3);
 					putchar(',');
 					putchar(' ');
 				}
