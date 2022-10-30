@@ -10,7 +10,7 @@
 
 int _islower(int c)
 {
-	int lowercase;
+	int lowercase = 0;
 
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
